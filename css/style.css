@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#f8f6f6, #efecec);
+}
+
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 150px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 220px;
+    height: 5px;
+    background-color: #ef8080;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 25px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #b16ff5;
+}
+.contact-inputs::placeholder{
+    font-weight: 500;
+    color: #999;
+}
+.contact-left button{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #e00954, #dcd8d8);
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+.contact-left button:hover{
+    background: linear-gradient(45deg, #508be1, #dcd8d8);
+}
+
+.contact-right img{
+    width: 500px;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;  /* Apilar elementos verticalmente */
+        gap: 50px; /* Reducir espacio entre los elementos */
+        height: auto; /* Ajustar altura según contenido */
+        padding: 20px; /* Añadir un poco de espacio */
+    }
+
+    .contact-left {
+        align-items: center; /* Centrar contenido */
+        width: 100%;
+    }
+
+    .contact-left-title h2 {
+        font-size: 28px; /* Reducir tamaño del título */
+        text-align: center;
+    }
+
+    .contact-left-title hr {
+        width: 150px; /* Ajustar ancho de la línea */
+        height: 3px;
+    }
+
+    .contact-inputs {
+        width: 90%; /* Ajustar ancho a la pantalla */
+        height: 45px; /* Ligeramente más pequeño */
+        padding-left: 15px; /* Reducir el padding */
+    }
+
+    .contact-left textarea {
+        width: 90%; /* Ajustar al ancho del contenedor */
+        height: 120px; /* Reducir altura */
+    }
+
+    .contact-left button {
+        width: 90%; /* Ajustar ancho del botón */
+        justify-content: center; /* Centrar el texto e imagen */
+    }
+
+    .contact-right img {
+        width: 90%; /* Ajustar imagen para móviles */
+        max-width: 300px; /* Limitar tamaño máximo */
+    }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form Data on Email</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="contact-container">
+
+        <form class="contact-left" action="https://api.web3forms.com/submit" method="POST" >
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+
+            <input type="hidden" name="access_key" value="a166f8e1-8c56-4d72-b6ba-20ae5e28f44e">
+
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">
+                submit
+                <img src="./img/arrow_icon.png" alt="">
+            </button>
+        </form>
+
+        <div class="contact-right">
+            <img src="./img/correo.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+</html>
